@@ -1,1 +1,1 @@
-welcome tojenkins hell
+echo 'welcome to jenkins hell'
