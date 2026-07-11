@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'eletronix'
+        label 'electronix'
     }
 
     stages {
