@@ -20,16 +20,10 @@ pipeline {
     post {
         success {
             echo "Pipeline Passed"
-            
-                 subject: "SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-                 body: "${env.JOB_NAME} Build Succeeded.\nCheck Build URL: ${env.BUILD_URL}"
         }
 
         failure {
             echo "Pipeline Failed"
-            
-                 subject: "FAIL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-                 body: "${env.JOB_NAME} Build Failed.\nCheck Build URL: ${env.BUILD_URL}"
         }
     }
 }
